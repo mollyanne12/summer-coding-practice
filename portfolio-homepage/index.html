@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>portfolio homepage</title>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Molly Fairhurst's Software Engineering project portfolio and journey towards becoming a patent attorney."
+    />
+
+    <title>Molly Fairhurst | Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -10,7 +22,7 @@
     <header>
       <h1>Molly Fairhurst</h1>
       <p>Software engineering student</p>
-      <p>Aspiring Patent Attorney</p>
+      <p>Aspiring Trainee Patent Attorney</p>
 
       <nav>
         <ul class="nav-list">
@@ -18,48 +30,255 @@
           <li><a href="#goals">My Goals</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2 id="about">About Me</h2>
 
-      <h2 id="goals">My Goals</h2>
-      <p class="goals">
-        My goals are to finish uni with a 2:1 or a first and get accepted into a
-        patent firm as i want to be a patent attorney.
-      </p>
+      <section class="introduction">
+        <p class="section-label">Welcome to my portfolio</p>
+      
+        <h2>My Portfolio</h2>
+      
+        <p class="introduction-text">
+          This portfolio showcases the software projects I have completed during my
+          Software Engineering degree.
+        </p>
+      
+      
+        <a class="portfolio-button" href="#projects">View My Projects</a>
+      </section>
+      
+      <section class="about-section" id="about">
+        <p class="section-label">A little about me</p>
+      
+        <h2>About Me</h2>
+      
+        <p>
+          I am a final-year BSc (Hons) Software Engineering student at Manchester
+          Metropolitan University, graduating in 2027.
+        </p>
+      
+        <p>
+          Throughout my degree, I have gained practical experience in programming,
+  full-stack web development, databases and software development processes.
+  My projects have strengthened my ability to analyse technical requirements,
+  solve problems and explain how software systems work.
+        </p>
+      
+        <p>
+          After graduating, I hope to begin my career as a trainee patent attorney.
+          I am drawn to the profession because it combines technical understanding,
+          legal reasoning and precise communication, allowing me to apply my STEM background within a legal career.
+        </p>
+      </section>
+      
+      <section class="goals-section" id="goals">
+        <p class="section-label">Looking ahead</p>
+      
+        <h2>My Goals</h2>
+      
+        <p class="goals">
+          My immediate goal is to graduate with a strong degree and begin my career as
+          a trainee patent attorney. I want to build on what I have learned during my
+          degree while developing my understanding of patent law and strengthening my
+          legal and written communication skills. In the longer term, I hope to qualify
+          as a patent attorney and build a career that allows me to use both my
+          technical and legal skills.
+        </p>
+      </section>
+    
 
-      <img
-        src="images/graduateicon.png"
-        alt="graduation hat"
-        style="width: 250px; height: 300px"
-      />
+      <section class="skills-section" id="skills">
+        <p class="section-label">What I have developed</p>
+      
+        <h2>Skills</h2>
+      
+        <p class="skills-introduction">
+          My degree projects and previous employment have helped me develop both
+          technical and professional skills.
+        </p>
+      
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Technical Skills</h3>
+      
+            <p>
+              Technologies and development practices I have used during my degree
+              and portfolio projects.
+            </p>
+      
+            <div class="skill-tags">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML &amp; CSS</span>
+              <span>Vue</span>
+              <span>Node.js &amp; Express</span>
+              <span>SQL &amp; SQLite</span>
+              <span>REST APIs</span>
+              <span>Git &amp; GitHub</span>
+              <span>Software Testing</span>
+            </div>
+          </article>
+      
+          <article class="skill-card professional-card">
+            <h3>Professional Skills</h3>
+      
+            <p>
+              Transferable skills developed through university work and
+              customer-facing employment.
+            </p>
+      
+            <div class="skill-tags">
+              <span>Analytical Problem Solving</span>
+              <span>Communication</span>
+              <span>Explaining Technical Information</span>
+              <span>Attention to Detail</span>
+              <span>Organisation</span>
+              <span>Teamwork</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <h2 id="skills">Skills i'm learning</h2>
-      <p>
-        The skills i am currently learning is html, python, CSS, how to build a
-        project from scratch and create websites.
-      </p>
+<h2 id="projects">Projects</h2>
 
-      <h2 id="projects">Projects</h2>
-      <ul>
-        <li>Full stack assignment</li>
-        <li>Snakes and ladders assigmnent</li>
-      </ul>
+  <p>
+    These projects demonstrate the technical and problem-solving skills I have
+    developed during my Software Engineering degree. Each project includes an
+    explanation of what I built, the technologies I used and how I approached
+    the development process.
+  </p>
 
-      <button onclick="document.location='default.asp'">HTML Tutorial</button>
 
-      <h2 id="contact">Contacts</h2>
-      <p>
-        <a href="mailto:mollyannef12@icloud.com"> mollyannef12@icloud.com </a>
-      </p>
+<ul class="project-list">
+  <li>
+    <h3>Auctionary</h3>
+<p>
+  <strong>Project type:</strong> Full-stack auction platform for vintage and
+  designer heels.
+</p>
+
+<p>
+  Auctionary allows users to create an account, sign in, browse and search
+  auction listings, list items for sale, place bids and ask questions about
+  individual listings.
+</p>
+
+<p>
+  I built a Vue frontend that communicates with a REST API developed using
+  Node.js and Express. The backend uses an SQLite database to manage users,
+  auction items, bids and questions. It also includes input validation,
+  password hashing, session-based authentication and automated API testing.
+</p>
+
+<p>
+  This project strengthened my understanding of how frontend, backend and
+  database components work together within a complete application. It was
+  originally completed as a university Full Stack Development assignment and
+  received a mark of 80%. I later refreshed the visual design for my portfolio
+  while retaining the assessed functionality.
+</p>
+
+<p>
+  <strong>Technologies:</strong> Vue, JavaScript, Node.js, Express and SQLite.
+</p>
+</li>
+
+  <li>
+    <h3>Configurable Board Game Simulator</h3>
+
+    <p>
+      <strong>Project type:</strong> Configurable Java board-game engine with a
+      visual web interface.
+    </p>
+    
+    <p>
+      This project simulates a traditional race-style board game. Games can be
+      configured with different board sizes, numbers of players and dice, end
+      rules, collision rules and teleport rules.
+    </p>
+    
+    <p>
+      The original version was completed as a university programming assignment.
+      After reviewing my tutor’s feedback, I returned to the project to correct
+      problems in the game behaviour, demonstrate a wider range of rule
+      configurations and improve the separation between the game logic and the
+      application layer.
+    </p>
+    
+    <p>
+      I also added automated tests and moved the main game loop into the domain
+      layer so that the core game can be reused independently of its output. I am
+      currently developing a browser-based interface that will allow the different
+      game configurations and results to be displayed visually.
+    </p>
+    
+    <p>
+      <strong>Technologies:</strong> Java, Spring Boot, Maven, JUnit, HTML, CSS and
+      JavaScript.
+    </p>
+    
+  
+  </li>
+</ul>
+
+
+<section class="contact-section" id="contact">
+  <h2>Get in Touch</h2>
+
+    <p class="contact-introduction">
+      If you would like to discuss my projects or a trainee patent attorney
+      opportunity, please send me a message and I will get back to you.
+    </p>
+
+
+  <form
+    class="contact-form"
+    action="mailto:mollyannef12@icloud.com?subject=Portfolio%20enquiry"
+    method="post"
+    enctype="text/plain"
+  >
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="Name"
+      placeholder="Your name"
+      autocomplete="name"
+      required
+    />
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="Email"
+      placeholder="Your email address"
+      autocomplete="email"
+      required
+    />
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="Message"
+      placeholder="Write your message here"
+      rows="7"
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
     </main>
 
     <footer>
-      <p>&copy; 2026 Molly Fairhurst My Website All rights reserved</p>
+      <p>&copy; 2026 Molly Fairhurst. All rights reserved.</p>
     </footer>
   </body>
 </html>
